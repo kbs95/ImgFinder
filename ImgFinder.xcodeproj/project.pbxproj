@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1275CA0903EC1483506A629E /* Pods_ImgFinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 236A67F9C1D36AD9F921477F /* Pods_ImgFinder.framework */; };
+		59176BDC21560F8F0045DB4B /* FlickrImageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59176BDB21560F8F0045DB4B /* FlickrImageResponse.swift */; };
+		59176BDF21561F290045DB4B /* SpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59176BDE21561F290045DB4B /* SpinnerView.swift */; };
+		59176BE221562AAB0045DB4B /* OfflineSearch+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59176BE021562AAB0045DB4B /* OfflineSearch+CoreDataClass.swift */; };
+		59176BE321562AAB0045DB4B /* OfflineSearch+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59176BE121562AAB0045DB4B /* OfflineSearch+CoreDataProperties.swift */; };
+		59176BE521562B530045DB4B /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59176BE421562B530045DB4B /* CoreDataManager.swift */; };
+		59176BE7215631A30045DB4B /* ReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59176BE6215631A30045DB4B /* ReachabilityManager.swift */; };
+		59176BE9215639A80045DB4B /* ImageViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59176BE8215639A80045DB4B /* ImageViewer.swift */; };
+		591AF7242155344D009B543F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591AF7232155344D009B543F /* AppDelegate.swift */; };
+		591AF7262155344D009B543F /* HomeSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591AF7252155344D009B543F /* HomeSearchViewController.swift */; };
+		591AF7292155344D009B543F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 591AF7272155344D009B543F /* Main.storyboard */; };
+		591AF72C2155344D009B543F /* ImgFinder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 591AF72A2155344D009B543F /* ImgFinder.xcdatamodeld */; };
+		591AF72E2155344F009B543F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 591AF72D2155344F009B543F /* Assets.xcassets */; };
+		591AF7312155344F009B543F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 591AF72F2155344F009B543F /* LaunchScreen.storyboard */; };
+		591AF73D21553F18009B543F /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591AF73B21553F18009B543F /* ImageCollectionViewCell.swift */; };
+		591AF73E21553F18009B543F /* ImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 591AF73C21553F18009B543F /* ImageCollectionViewCell.xib */; };
+		591AF74121555E7F009B543F /* FlickrService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591AF74021555E7F009B543F /* FlickrService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		236A67F9C1D36AD9F921477F /* Pods_ImgFinder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImgFinder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4572989A6838640BAA5A4F5C /* Pods-ImgFinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImgFinder.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ImgFinder/Pods-ImgFinder.debug.xcconfig"; sourceTree = "<group>"; };
+		59176BDB21560F8F0045DB4B /* FlickrImageResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrImageResponse.swift; sourceTree = "<group>"; };
+		59176BDE21561F290045DB4B /* SpinnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerView.swift; sourceTree = "<group>"; };
+		59176BE021562AAB0045DB4B /* OfflineSearch+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OfflineSearch+CoreDataClass.swift"; sourceTree = "<group>"; };
+		59176BE121562AAB0045DB4B /* OfflineSearch+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OfflineSearch+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		59176BE421562B530045DB4B /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		59176BE6215631A30045DB4B /* ReachabilityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityManager.swift; sourceTree = "<group>"; };
+		59176BE8215639A80045DB4B /* ImageViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewer.swift; sourceTree = "<group>"; };
+		591AF7202155344D009B543F /* ImgFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImgFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		591AF7232155344D009B543F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		591AF7252155344D009B543F /* HomeSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSearchViewController.swift; sourceTree = "<group>"; };
+		591AF7282155344D009B543F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		591AF72B2155344D009B543F /* ImgFinder.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ImgFinder.xcdatamodel; sourceTree = "<group>"; };
+		591AF72D2155344F009B543F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		591AF7302155344F009B543F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		591AF7322155344F009B543F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		591AF73B21553F18009B543F /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		591AF73C21553F18009B543F /* ImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCollectionViewCell.xib; sourceTree = "<group>"; };
+		591AF74021555E7F009B543F /* FlickrService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrService.swift; sourceTree = "<group>"; };
+		625518FBA7E9686C202B919D /* Pods-ImgFinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImgFinder.release.xcconfig"; path = "Pods/Target Support Files/Pods-ImgFinder/Pods-ImgFinder.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		591AF71D2155344D009B543F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1275CA0903EC1483506A629E /* Pods_ImgFinder.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		23FCC8B855F3CFE636E9349F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				236A67F9C1D36AD9F921477F /* Pods_ImgFinder.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		59176BDD21561F1B0045DB4B /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				59176BDE21561F290045DB4B /* SpinnerView.swift */,
+				59176BE6215631A30045DB4B /* ReachabilityManager.swift */,
+				59176BE8215639A80045DB4B /* ImageViewer.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		591AF7172155344D009B543F = {
+			isa = PBXGroup;
+			children = (
+				591AF7222155344D009B543F /* ImgFinder */,
+				591AF7212155344D009B543F /* Products */,
+				EDB6627351D50D6187D15566 /* Pods */,
+				23FCC8B855F3CFE636E9349F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		591AF7212155344D009B543F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				591AF7202155344D009B543F /* ImgFinder.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		591AF7222155344D009B543F /* ImgFinder */ = {
+			isa = PBXGroup;
+			children = (
+				59176BDD21561F1B0045DB4B /* Utilities */,
+				591AF73F21555E5F009B543F /* FlickrManager */,
+				591AF73A21553EF0009B543F /* Nibs */,
+				591AF739215534CA009B543F /* CoreDataModals */,
+				591AF738215534B2009B543F /* ViewControllers */,
+				591AF7232155344D009B543F /* AppDelegate.swift */,
+				591AF7272155344D009B543F /* Main.storyboard */,
+				591AF72D2155344F009B543F /* Assets.xcassets */,
+				591AF72F2155344F009B543F /* LaunchScreen.storyboard */,
+				591AF7322155344F009B543F /* Info.plist */,
+				591AF72A2155344D009B543F /* ImgFinder.xcdatamodeld */,
+			);
+			path = ImgFinder;
+			sourceTree = "<group>";
+		};
+		591AF738215534B2009B543F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				591AF7252155344D009B543F /* HomeSearchViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		591AF739215534CA009B543F /* CoreDataModals */ = {
+			isa = PBXGroup;
+			children = (
+				59176BE021562AAB0045DB4B /* OfflineSearch+CoreDataClass.swift */,
+				59176BE121562AAB0045DB4B /* OfflineSearch+CoreDataProperties.swift */,
+				59176BE421562B530045DB4B /* CoreDataManager.swift */,
+			);
+			path = CoreDataModals;
+			sourceTree = "<group>";
+		};
+		591AF73A21553EF0009B543F /* Nibs */ = {
+			isa = PBXGroup;
+			children = (
+				591AF73B21553F18009B543F /* ImageCollectionViewCell.swift */,
+				591AF73C21553F18009B543F /* ImageCollectionViewCell.xib */,
+			);
+			path = Nibs;
+			sourceTree = "<group>";
+		};
+		591AF73F21555E5F009B543F /* FlickrManager */ = {
+			isa = PBXGroup;
+			children = (
+				591AF74021555E7F009B543F /* FlickrService.swift */,
+				59176BDB21560F8F0045DB4B /* FlickrImageResponse.swift */,
+			);
+			path = FlickrManager;
+			sourceTree = "<group>";
+		};
+		EDB6627351D50D6187D15566 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4572989A6838640BAA5A4F5C /* Pods-ImgFinder.debug.xcconfig */,
+				625518FBA7E9686C202B919D /* Pods-ImgFinder.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		591AF71F2155344D009B543F /* ImgFinder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 591AF7352155344F009B543F /* Build configuration list for PBXNativeTarget "ImgFinder" */;
+			buildPhases = (
+				309F12D0FB1A89484BAFED93 /* [CP] Check Pods Manifest.lock */,
+				591AF71C2155344D009B543F /* Sources */,
+				591AF71D2155344D009B543F /* Frameworks */,
+				591AF71E2155344D009B543F /* Resources */,
+				D82F4A00385370CFB4B7EFBC /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ImgFinder;
+			productName = ImgFinder;
+			productReference = 591AF7202155344D009B543F /* ImgFinder.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		591AF7182155344D009B543F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = Abcplusd;
+				TargetAttributes = {
+					591AF71F2155344D009B543F = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 591AF71B2155344D009B543F /* Build configuration list for PBXProject "ImgFinder" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 591AF7172155344D009B543F;
+			productRefGroup = 591AF7212155344D009B543F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				591AF71F2155344D009B543F /* ImgFinder */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		591AF71E2155344D009B543F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				591AF7312155344F009B543F /* LaunchScreen.storyboard in Resources */,
+				591AF72E2155344F009B543F /* Assets.xcassets in Resources */,
+				591AF73E21553F18009B543F /* ImageCollectionViewCell.xib in Resources */,
+				591AF7292155344D009B543F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		309F12D0FB1A89484BAFED93 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ImgFinder-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D82F4A00385370CFB4B7EFBC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ImgFinder/Pods-ImgFinder-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FLAnimatedImage/FLAnimatedImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FLAnimatedImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ImgFinder/Pods-ImgFinder-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		591AF71C2155344D009B543F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				591AF72C2155344D009B543F /* ImgFinder.xcdatamodeld in Sources */,
+				59176BE7215631A30045DB4B /* ReachabilityManager.swift in Sources */,
+				59176BE321562AAB0045DB4B /* OfflineSearch+CoreDataProperties.swift in Sources */,
+				591AF7262155344D009B543F /* HomeSearchViewController.swift in Sources */,
+				591AF74121555E7F009B543F /* FlickrService.swift in Sources */,
+				59176BE221562AAB0045DB4B /* OfflineSearch+CoreDataClass.swift in Sources */,
+				59176BDC21560F8F0045DB4B /* FlickrImageResponse.swift in Sources */,
+				591AF73D21553F18009B543F /* ImageCollectionViewCell.swift in Sources */,
+				591AF7242155344D009B543F /* AppDelegate.swift in Sources */,
+				59176BE9215639A80045DB4B /* ImageViewer.swift in Sources */,
+				59176BE521562B530045DB4B /* CoreDataManager.swift in Sources */,
+				59176BDF21561F290045DB4B /* SpinnerView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		591AF7272155344D009B543F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				591AF7282155344D009B543F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		591AF72F2155344F009B543F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				591AF7302155344F009B543F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		591AF7332155344F009B543F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		591AF7342155344F009B543F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		591AF7362155344F009B543F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4572989A6838640BAA5A4F5C /* Pods-ImgFinder.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4ZQDTN553Y;
+				INFOPLIST_FILE = ImgFinder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Karanbir.ImgFinder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		591AF7372155344F009B543F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 625518FBA7E9686C202B919D /* Pods-ImgFinder.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4ZQDTN553Y;
+				INFOPLIST_FILE = ImgFinder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Karanbir.ImgFinder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		591AF71B2155344D009B543F /* Build configuration list for PBXProject "ImgFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				591AF7332155344F009B543F /* Debug */,
+				591AF7342155344F009B543F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		591AF7352155344F009B543F /* Build configuration list for PBXNativeTarget "ImgFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				591AF7362155344F009B543F /* Debug */,
+				591AF7372155344F009B543F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		591AF72A2155344D009B543F /* ImgFinder.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				591AF72B2155344D009B543F /* ImgFinder.xcdatamodel */,
+			);
+			currentVersion = 591AF72B2155344D009B543F /* ImgFinder.xcdatamodel */;
+			path = ImgFinder.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 591AF7182155344D009B543F /* Project object */;
+}
